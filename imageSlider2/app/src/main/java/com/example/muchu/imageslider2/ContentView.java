@@ -22,7 +22,7 @@ import java.util.HashMap;
 
 import static android.R.attr.name;
 
-public class MainActivity extends AppCompatActivity
+public class ContentView extends AppCompatActivity
         implements BaseSliderView.OnSliderClickListener,
         ViewPagerEx.OnPageChangeListener
 {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_content_view);
 
         sliderLayout = (SliderLayout)findViewById(R.id.slider);
         goToStore = (TextView) findViewById(R.id.go_to_store);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity
         goToStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,shopProfile.class);
+                Intent intent = new Intent(ContentView.this,shopProfile.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,shopProfile.class);
+                Intent intent = new Intent(ContentView.this,shopProfile.class);
                 startActivity(intent);
             }
         });
@@ -71,12 +71,12 @@ public class MainActivity extends AppCompatActivity
         //AddImageUrlFormLocalRes();
 
         //Call this method to stop automatic sliding.
-       sliderLayout.stopAutoCycle();
+        sliderLayout.stopAutoCycle();
 
         for(String name : HashMapForURL.keySet()){
 
-            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
-            ImageView imageView = new ImageView(MainActivity.this);
+            TextSliderView textSliderView = new TextSliderView(ContentView.this);
+            ImageView imageView = new ImageView(ContentView.this);
 
 
             textSliderView
@@ -91,16 +91,16 @@ public class MainActivity extends AppCompatActivity
 
             sliderLayout.addSlider(textSliderView);
 
-       }
+        }
         sliderLayout.setPresetTransformer(SliderLayout.Transformer.Default);
 
-       // sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        // sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
 //
         //sliderLayout.setCustomAnimation(new DescriptionAnimation());
 
-       // sliderLayout.setDuration(3000);
+        // sliderLayout.setDuration(3000);
 
-        sliderLayout.addOnPageChangeListener(MainActivity.this);
+        sliderLayout.addOnPageChangeListener(ContentView.this);
     }
 
     @Override

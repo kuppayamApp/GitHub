@@ -22,7 +22,8 @@
         <activity android:name=".shopProfile" />
         <activity android:name=".oneFragment" />
         <activity android:name=".twoFragment" />
-        <activity android:name=".shopProfileTwo"></activity>
+        <activity android:name=".shopProfileTwo" />
+        <activity android:name=".ContentView" />
     </application>
 
 </manifest>
