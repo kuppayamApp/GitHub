@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "870358815389",
+    "firebase_url": "https://realtime-11433.firebaseio.com",
+    "project_id": "realtime-11433",
+    "storage_bucket": "realtime-11433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870358815389:android:e51a79babc5a4b6d",
+        "android_client_info": {
+          "package_name": "com.example.muchu.realtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870358815389-nhp4tme1idk6mk20t10qcchpkn8ai8ih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.muchu.realtime",
+            "certificate_hash": "8e418922336eeabd40a0403bc741ae5976f25775"
+          }
+        },
+        {
+          "client_id": "870358815389-jdoc8rv2tbcvmg6gmkmvho9gq7fnrau5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_D6f-9Ufo3ZiVwASgZ5cIXraiXiMIYaw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870358815389-jdoc8rv2tbcvmg6gmkmvho9gq7fnrau5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
